@@ -46,7 +46,6 @@ def get_mul_instructions_in_line(input_line, is_enabled_param):
                 mul = int(numbers_to_multiply[0]) * int(numbers_to_multiply[1])
                 result += mul
         
-        #Todo: Logic for is_enabled
         do_occurences = [m.start() for m in re.finditer('do\(\)', split_str)]
         dont_occurences = [m.start() for m in re.finditer('don\'t\(\)', split_str)]
 
